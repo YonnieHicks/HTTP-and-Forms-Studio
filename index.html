@@ -3,9 +3,17 @@
 <head>
 	<meta charset="utf-8">
 	<script>
-		// TODO: create a handler
+		
+
+function setSearchEngine(){
+	let userInput = document.querySelector("input[name=engine]:checked").value;
+};
+
 		window.addEventListener("load", function () {
-			// TODO: register the handler
+			let form = document.getElementById("search-form");
+			form.addEventListener("submit", setSearchEngine);
+			
+			
 		});
 	</script>
 </head>
